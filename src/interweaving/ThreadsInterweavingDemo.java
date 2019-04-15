@@ -1,10 +1,10 @@
-package sharedmemory;
+package interweaving;
 
 /*
- * two thread are incrementing counter.
- * This is not an atomic operation thats why counter is usally less tran 20000 after doWrok()
+ * two thread are incrementing the counter.
+ * This is not an atomic operation that's why counter is usally less than 20000 after doWrok()
  */
-public class SharedMemoryDemo {
+public class ThreadsInterweavingDemo {
 
     private int counter;
 
@@ -31,6 +31,6 @@ public class SharedMemoryDemo {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        new SharedMemoryDemo().doWork();
+        new ThreadsInterweavingDemo().doWork();
     }
 }
