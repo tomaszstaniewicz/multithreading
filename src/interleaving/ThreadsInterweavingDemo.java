@@ -1,4 +1,4 @@
-package interweaving;
+package interleaving;
 
 /*
  * two thread are incrementing the counter.

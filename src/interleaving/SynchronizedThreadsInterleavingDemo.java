@@ -1,9 +1,9 @@
-package interweaving;
+package interleaving;
 
 /*
- * with synchronized threads interweaving is solved - counter is always 20000 after doWork()
+ * with synchronized threads interleaving is solved - counter is always 20000 after doWork()
  */
-public class SynchronizedThreadsInterweavingDemo {
+public class SynchronizedThreadsInterleavingDemo {
 
     private int counter;
 
@@ -34,6 +34,6 @@ public class SynchronizedThreadsInterweavingDemo {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        new SynchronizedThreadsInterweavingDemo().doWork();
+        new SynchronizedThreadsInterleavingDemo().doWork();
     }
 }
